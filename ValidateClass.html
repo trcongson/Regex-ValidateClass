@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class</title>
+</head>
+<body>
+<script>
+    function isClass(str) {
+        let regexp = /^[CAP]{1}[0-9]{4}[GHIKLM]{1}/;
+        let result = regexp.test(str);
+        if (result) {
+            console.log("is Class name.");
+        } else {
+            console.log("is not Class name.");
+        }
+    }
+
+    isClass('C0318G');
+    isClass('M0318G');
+</script>
+</body>
+</html>
